@@ -1,42 +1,69 @@
 import styles from './navbar.module.css'
-import getirsvg from '../../getirlogo.svg'
-import getiryemeksvg from '../../getiryemeklogo.svg'
-import getirbuyuksvg from '../../getirbuyuklogo.svg'
-import getirsusvg from '../../getirsulogo.svg'
-import languagesvg from '../../languagelogo.svg'
-import usersvg from '../../userlogo.svg'
-import addusersvg from '../../adduserlogo.svg'
+import GetirSu from "../icons/getirsu";
+import GetirYemek from "../icons/getiryemek";
+import GetirBuyuk from "../icons/getirbuyuk";
+import Getir from "../icons/getir";
+import Language from "../icons/language";
+import User from "../icons/user";
+import AddUser from "../icons/adduser";
+import {useState} from "react";
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+
+    const handleClick= () => {
+        setClick(!click);
+    }
+
+    const  [clickYemek, setClickYemek]=useState(false);
+
+    const  handleYemekClick=()=> {
+        setClickYemek(!clickYemek);
+    }
+
+    const  [clickBuyuk, setClickBuyuk]=useState(false);
+
+    const  handleBuyukClick=()=> {
+        setClickBuyuk(!clickBuyuk);
+    }
+
+    const  [clickSu, setClickSu]=useState(false);
+
+    const  handleSuClick=()=> {
+        setClickSu(!clickSu);
+    }
     return (
-        <div className={styles.navbar}>
-            <div className={styles.navbarWrapper}>
-
-
-                <div className={styles.navbarMenu}>
-                    <img className={styles.nav_logo} id={styles.getir_logo} src={getirsvg}/>
-                    <img className={styles.nav_logo} id={styles.getiryemek_logo} src={getiryemeksvg}/>
-                    <img className={styles.nav_logo} id={styles.getirbuyuk_logo} src={getirbuyuksvg}/>
-                    <img className={styles.nav_logo} id={styles.getirsu_logo} src={getirsusvg}/>
+        <div className={styles.navbar + " " + styles.flexRow}>
+            <div className={styles.navbarWrapper + " " + styles.flexRow}>
+                <div className={styles.navbarMenu + " " + styles.flexRow}>
+                    <Getir onClick={handleClick} className={styles.nav_logo + " " + styles.getirLogo + " " + styles.navHeight}
+                           color={click ? '#DBDBFFFF' : '#FFD300'}/>
+                    <GetirYemek onClick={handleYemekClick} className={styles.nav_logo + " " + styles.getiryemekLogo + " " + styles.navHeight}
+                                color={clickYemek ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                    <GetirBuyuk onClick={handleBuyukClick}  className={styles.nav_logo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
+                                color={clickBuyuk ? '#FFD300' : '#DBDBFFFF' } baseColor={'#DBDBFFFF'}/>
+                    <GetirSu onClick={handleSuClick} className={styles.nav_logo + " " + styles.getirsuLogo + " " + styles.navHeight}
+                             color={clickSu ?  '#FFD300': '#DBDBFFFF' } baseColor={'#DBDBFFFF'}/>
                 </div>
 
-                <div className={styles.navbarOption}>
-                    <button className={styles.language_button}>
-                        <div className={styles.language_div}>
-                            <img className={styles.nav_logo} id={styles.languageslogo} src={languagesvg}/>
+                <div className={styles.navbarOption + " " + styles.flexRow}>
+                    <button className={styles.language_button + " " + styles.flexRow}>
+                        <div className={styles.language_div + " " + styles.navHeight}>
+                            <Language color={"#DBDBFFFF"}
+                                      className={styles.nav_logo + " " + styles.languagesLogo + " " + styles.navHeight}/>
                         </div>
                         <span>Türkçe(TR)</span>
 
                     </button>
-                    <button className={styles.user_button}>
-                        <div className={styles.user_div}>
-                            <img className={styles.nav_logo} id={styles.userlogo} src={usersvg}/>
+                    <button className={styles.user_button + " " + styles.flexRow}>
+                        <div className={styles.user_div + " " + styles.navHeight}>
+                            <User color={"#DBDBFFFF"} className={styles.nav_logo + " " +styles.userLogo + " " +styles.navHeight}/>
                         </div>
                         <span>Giriş Yap</span>
                     </button>
-                    <button className={styles.adduser_button}>
-                        <div className={styles.adduser_div}>
-                            <img className={styles.nav_logo} id={styles.adduserlogo} src={addusersvg}/>
+                    <button className={styles.adduser_button + " " + styles.flexRow}>
+                        <div className={styles.adduser_div + " " + styles.navHeight}>
+                            <AddUser color={"#DBDBFFFF"} className={styles.nav_logo + " " + styles.adduserLogo + " " + styles.navHeight}/>
                         </div>
                         <span>Kayıt Ol</span>
                     </button>
