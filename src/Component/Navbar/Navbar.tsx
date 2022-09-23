@@ -12,28 +12,29 @@ import {Routes, Route, Link, NavLink} from "react-router-dom";
 const Navbar = () => {
 
 
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(0);
 
     const handleClick = () => {
-        setClick(!click);
+        setClick(0)
+
     }
 
     const [clickYemek, setClickYemek] = useState(false);
 
     const handleYemekClick = () => {
-        setClickYemek(!clickYemek);
+        setClick(1)
     }
 
     const [clickBuyuk, setClickBuyuk] = useState(false);
 
     const handleBuyukClick = () => {
-        setClickBuyuk(!clickBuyuk);
+        setClick(2)
     }
 
     const [clickSu, setClickSu] = useState(false);
 
     const handleSuClick = () => {
-        setClickSu(!clickSu);
+        setClick(3)
     }
     return (
         <div className={styles.navbar + " " + styles.flexRow}>
@@ -42,23 +43,23 @@ const Navbar = () => {
                     <NavLink to="/">
                         <Getir onClick={handleClick}
                                className={styles.nav_logo + " " + styles.getirLogo + " " + styles.navHeight}
-                               color={click ? '#DBDBFFFF' : '#FFD300'}/>
+                               color={click == 0? '#FFD300':'#DBDBFFFF'  }/>
                     </NavLink>
                     <NavLink to="/getiryemek">
                         <GetirYemek onClick={handleYemekClick}
                                     className={styles.nav_logo + " " + styles.getiryemekLogo + " " + styles.navHeight}
-                                    color={clickYemek ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                                    color={click == 1? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
                     </NavLink>
                     <NavLink to="/getirbuyuk">
                         <GetirBuyuk onClick={handleBuyukClick}
                                     className={styles.nav_logo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
-                                    color={clickBuyuk ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                                    color={click == 2? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
                     </NavLink>
 
                     <NavLink to="/getirsu">
                         <GetirSu onClick={handleSuClick}
                                  className={styles.nav_logo + " " + styles.getirsuLogo + " " + styles.navHeight}
-                                 color={clickSu ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                                 color={click == 3? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
                     </NavLink>
                 </div>
 
