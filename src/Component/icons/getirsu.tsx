@@ -2,14 +2,13 @@ export interface GetirSuProps {
     baseColor:string
     color: string
     className: string
-    onClick: () => void
 
 }
 
 const GetirSu: React.FC<GetirSuProps> = (props: GetirSuProps) => {
-    const {color, className,baseColor, onClick} = props
+    const {color, className,baseColor} = props
 
-    return <svg viewBox="0 0 210 64" onClick={onClick} className={className}  xmlns="http://www.w3.org/2000/svg">
+    return <svg viewBox="0 0 210 64"  className={className}  xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
             <path
                 d="M69.3916 24.6615C69.3916 17.3728 63.4009 12.5803 54.6812 12.5803C46.3942 12.5803 37.7077 18.5377 37.7077 31.8169C37.7077 41.9678 43.8315 49.4561 54.4482 49.4561C60.4056 49.4561 66.962 46.0614 68.6261 43.7317C68.6261 43.7317 67.4945 39.3718 64.3994 39.3718C62.7686 39.3718 61.5704 40.0042 60.2392 40.5699C58.8414 41.1357 57.2106 41.6349 55.0806 41.6349C52.1185 41.6349 47.0265 40.4368 47.0265 34.0801C47.0265 34.0801 49.4228 34.779 54.8809 34.779C66.5626 34.7457 69.3916 29.8201 69.3916 24.6615ZM55.0473 20.5013C59.0743 20.5013 61.0047 22.6979 61.0047 24.6947C61.0047 27.0577 58.8747 28.5887 55.014 28.5887C49.4228 28.5887 47.2928 27.7899 47.2928 27.7899C47.2928 24.3952 49.9553 20.5013 55.0473 20.5013Z"

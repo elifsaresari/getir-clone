@@ -19,19 +19,16 @@ const Navbar = () => {
 
     }
 
-    const [clickYemek, setClickYemek] = useState(false);
 
     const handleYemekClick = () => {
         setClick(1)
     }
 
-    const [clickBuyuk, setClickBuyuk] = useState(false);
 
     const handleBuyukClick = () => {
         setClick(2)
     }
 
-    const [clickSu, setClickSu] = useState(false);
 
     const handleSuClick = () => {
         setClick(3)
@@ -40,26 +37,28 @@ const Navbar = () => {
         <div className={styles.navbar + " " + styles.flexRow}>
             <div className={styles.navbarWrapper + " " + styles.flexRow}>
                 <div className={styles.navbarMenu + " " + styles.flexRow}>
-                    <NavLink to="/">
+                    <NavLink to="/" onClick={handleClick}>
                         <Getir onClick={handleClick}
                                className={styles.nav_logo + " " + styles.getirLogo + " " + styles.navHeight}
-                               color={click == 0? '#FFD300':'#DBDBFFFF'  }/>
-                    </NavLink>
-                    <NavLink to="/getiryemek">
-                        <GetirYemek onClick={handleYemekClick}
-                                    className={styles.nav_logo + " " + styles.getiryemekLogo + " " + styles.navHeight}
-                                    color={click == 1? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
-                    </NavLink>
-                    <NavLink to="/getirbuyuk">
-                        <GetirBuyuk onClick={handleBuyukClick}
-                                    className={styles.nav_logo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
-                                    color={click == 2? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                               color={click == 0 ? '#FFD300' : '#DBDBFFFF'}/>
                     </NavLink>
 
-                    <NavLink to="/getirsu">
-                        <GetirSu onClick={handleSuClick}
-                                 className={styles.nav_logo + " " + styles.getirsuLogo + " " + styles.navHeight}
-                                 color={click == 3? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                    <NavLink to="/getiryemek" onClick={handleYemekClick}>
+                        <GetirYemek
+                            className={styles.nav_logo + " " + styles.getiryemekLogo + " " + styles.navHeight}
+                            color={click == 1 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                    </NavLink>
+
+                    <NavLink to="/getirbuyuk" onClick={handleBuyukClick}>
+                        <GetirBuyuk
+                            className={styles.nav_logo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
+                            color={click == 2 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                    </NavLink>
+
+                    <NavLink to="/getirsu" onClick={handleSuClick}>
+                        <GetirSu
+                            className={styles.nav_logo + " " + styles.getirsuLogo + " " + styles.navHeight}
+                            color={click == 3 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
                     </NavLink>
                 </div>
 
