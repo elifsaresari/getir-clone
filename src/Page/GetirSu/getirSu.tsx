@@ -1,3 +1,5 @@
+import styles from "../../Page/GetirSu/getirSu.module.css"
+
 const GetirSu = () => {
     return (
         <div>

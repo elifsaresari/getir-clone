@@ -1,0 +1,46 @@
+.apply{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 13.375rem;
+    margin-top: 40px;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    margin-left: 1.5rem;
+}
+
+.applyBox{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.applyHeader{
+    color: #5d3ebc;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.applyText{
+    color: #697488;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.applyButton{
+
+    line-height: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 0.25rem;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(262.73deg, rgb(255, 228, 48) 0%, rgb(255, 213, 0) 100%);
+}
+
+.buttonText{
+    font-size: 1rem;
+    color: #5d3ebc;
+}

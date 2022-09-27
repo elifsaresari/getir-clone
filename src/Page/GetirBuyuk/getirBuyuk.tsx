@@ -1,3 +1,5 @@
+import styles from "../../Page/GetirBuyuk/getirBuyuk.module.css"
+
 const GetirBuyuk = () => {
     return (
         <div>

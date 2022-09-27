@@ -3,7 +3,7 @@ export interface AdduserProps {
     className: string
 }
 
-const AddUser: React.FC<AdduserProps> = (props: AdduserProps) => {
+const Adduser: React.FC<AdduserProps> = (props: AdduserProps) => {
 
 	const {color,className}=props
 
@@ -35,4 +35,4 @@ const AddUser: React.FC<AdduserProps> = (props: AdduserProps) => {
 
 }
 
-export default AddUser
+export default Adduser

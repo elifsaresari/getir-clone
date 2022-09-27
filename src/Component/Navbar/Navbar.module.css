@@ -1,17 +1,31 @@
-.flexRow {
-    display: flex;
-    flex-direction: row;
+button {
+    align-items: center;
+    width: auto;
+    height: 2.5rem;
+    border: 0;
+    background-color: transparent;
 }
 
-.navHeight {
-    height: 1rem;
+button span {
+    font-size: 0.875rem;
+    color: rgb(219, 219, 255);
+}
+
+.wrapper{
+    height: 45px;
+    position: sticky;
+    top:0px;
+    z-index: 20;
 }
 
 .navbar {
+    height: 45px !important;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
     justify-content: space-between;
     width: 100%;
     background: rgb(76, 51, 152);
-    height: 45px;
 }
 
 .navbarWrapper {
@@ -19,19 +33,26 @@
     align-items: center;
     font-size: 1.25rem;
     width: 100%;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
     background: transparent;
-    padding-right: 2rem;
-    padding-left: 2rem;
     height: auto;
-
 }
 
 .navbarMenu {
     justify-content: space-between;
-    margin: 0 4rem;
     height: auto;
     background: transparent;
+}
 
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.navHeight {
+    height: 1rem;
 }
 
 .navbarOption {
@@ -51,24 +72,12 @@
     padding-right: 0.75rem;
 }
 
-.nav_logo {
+.navLogo {
     margin-right: 2rem;
     color: rgb(250, 250, 250);
 }
 
-button {
-    align-items: center;
-    width: auto;
-    height: 2.5rem;
-    border: 0;
-    background-color: transparent;
-}
 
-
-button span {
-    font-size: 0.875rem;
-    color: rgb(219, 219, 255);
-}
 
 
 .languagesLogo {

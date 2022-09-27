@@ -1,0 +1,129 @@
+.mainFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+
+.footerFirst {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+    justify-content: space-between;
+}
+
+.footerSecond {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.copy {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    align-items: center;
+}
+
+.copy a {
+    color: #5d3ebc;
+}
+
+.copyDot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #5d3ebc;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 8;
+}
+
+.facebookButton:hover .facebookSvg {
+    fill: #5d3ebc !important;
+
+}
+
+.facebookSvg {
+    fill: #697488FF;
+}
+
+.twitterButton:hover .twitter {
+    fill: #5d3ebc;
+}
+
+.twitterSvg {
+    fill: #697488FF;
+}
+
+.ınstagramButton:hover .instagram {
+    fill: #5d3ebc;
+}
+
+.ınstagramSvg {
+    fill: #697488FF;
+}
+
+.languageButton {
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.languageButton:hover .language {
+    stroke: #5d3ebc;
+}
+
+.languageDiv {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.languageButton:hover .languageText {
+    color: #5d3ebc;
+}
+
+.languageText {
+    color: #697488FF;
+    height: 20px;
+    padding-left: 3px;
+}
+
+
+.language {
+    width: 20px;
+    height: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

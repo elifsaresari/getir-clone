@@ -1,0 +1,25 @@
+.sloganBox{
+    @apply flex box-border flex-col justify-center text-center items-center ;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:60px 16px 40px;
+    width: 28%;
+
+}
+
+.sloganHeader{
+    color: #5d3ebc;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.sloganText{
+    font-size: 15px;
+    color: #697488;
+    margin-top: 8px;
+}

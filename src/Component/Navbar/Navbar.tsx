@@ -5,60 +5,43 @@ import GetirBuyuk from "../icons/getirbuyuk";
 import Getir from "../icons/getir";
 import Language from "../icons/language";
 import User from "../icons/user";
-import AddUser from "../icons/adduser";
-import {useState} from "react";
-import {Routes, Route, Link, NavLink} from "react-router-dom";
+import Adduser from "../icons/adduser";
+import {Routes, Route, Link, NavLink, useLocation} from "react-router-dom";
 
 const Navbar = () => {
 
+    const location = useLocation()
 
-    const [click, setClick] = useState(0);
-
-    const handleClick = () => {
-        setClick(0)
-
-    }
-
-
-    const handleYemekClick = () => {
-        setClick(1)
-    }
-
-
-    const handleBuyukClick = () => {
-        setClick(2)
-    }
-
-
-    const handleSuClick = () => {
-        setClick(3)
-    }
     return (
+        <div className={styles.wrapper}>
         <div className={styles.navbar + " " + styles.flexRow}>
             <div className={styles.navbarWrapper + " " + styles.flexRow}>
                 <div className={styles.navbarMenu + " " + styles.flexRow}>
-                    <NavLink to="/" onClick={handleClick}>
-                        <Getir onClick={handleClick}
-                               className={styles.nav_logo + " " + styles.getirLogo + " " + styles.navHeight}
-                               color={click == 0 ? '#FFD300' : '#DBDBFFFF'}/>
+                    <NavLink to="/">
+                        <Getir
+                            className={styles.navLogo + " " + styles.getirLogo + " " + styles.navHeight}
+                            color={location.pathname.startsWith('/') ? '#FFD300' : '#DBDBFFFF'}/>
                     </NavLink>
 
-                    <NavLink to="/getiryemek" onClick={handleYemekClick}>
+                    <NavLink to="/getiryemek">
                         <GetirYemek
-                            className={styles.nav_logo + " " + styles.getiryemekLogo + " " + styles.navHeight}
-                            color={click == 1 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                            className={styles.navLogo + " " + styles.getiryemekLogo + " " + styles.navHeight}
+                            color={location.pathname.startsWith("/getiryemek") ? '#FFD300' : '#DBDBFFFF'}
+                            baseColor={'#DBDBFFFF'}/>
                     </NavLink>
 
-                    <NavLink to="/getirbuyuk" onClick={handleBuyukClick}>
+                    <NavLink to="/getirbuyuk">
                         <GetirBuyuk
-                            className={styles.nav_logo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
-                            color={click == 2 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                            className={styles.navLogo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
+                            color={location.pathname.startsWith("/getirbuyuk") ? '#FFD300' : '#DBDBFFFF'}
+                            baseColor={'#DBDBFFFF'}/>
                     </NavLink>
 
-                    <NavLink to="/getirsu" onClick={handleSuClick}>
+                    <NavLink to="/getirsu">
                         <GetirSu
-                            className={styles.nav_logo + " " + styles.getirsuLogo + " " + styles.navHeight}
-                            color={click == 3 ? '#FFD300' : '#DBDBFFFF'} baseColor={'#DBDBFFFF'}/>
+                            className={styles.navLogo + " " + styles.getirsuLogo + " " + styles.navHeight}
+                            color={location.pathname.startsWith("/getirsu") ? '#FFD300' : '#DBDBFFFF'}
+                            baseColor={'#DBDBFFFF'}/>
                     </NavLink>
                 </div>
 
@@ -66,7 +49,7 @@ const Navbar = () => {
                     <button className={styles.language_button + " " + styles.flexRow}>
                         <div className={styles.language_div + " " + styles.navHeight}>
                             <Language color={"#DBDBFFFF"}
-                                      className={styles.nav_logo + " " + styles.languagesLogo + " " + styles.navHeight}/>
+                                      className={styles.navLogo + " " + styles.languagesLogo + " " + styles.navHeight}/>
                         </div>
                         <span>Türkçe(TR)</span>
 
@@ -75,21 +58,22 @@ const Navbar = () => {
                     <button className={styles.user_button + " " + styles.flexRow}>
                         <div className={styles.user_div + " " + styles.navHeight}>
                             <User color={"#DBDBFFFF"}
-                                  className={styles.nav_logo + " " + styles.userLogo + " " + styles.navHeight}/>
+                                  className={styles.navLogo + " " + styles.userLogo + " " + styles.navHeight}/>
                         </div>
                         <span>Giriş Yap</span>
                     </button>
                     <button className={styles.adduser_button + " " + styles.flexRow}>
                         <div className={styles.adduser_div + " " + styles.navHeight}>
-                            <AddUser color={"#DBDBFFFF"}
-                                     className={styles.nav_logo + " " + styles.adduserLogo + " " + styles.navHeight}/>
+                            <Adduser color={"#DBDBFFFF"}
+                                     className={styles.navLogo + " " + styles.adduserLogo + " " + styles.navHeight}/>
                         </div>
                         <span>Kayıt Ol</span>
                     </button>
                 </div>
             </div>
         </div>
+        </div>
     )
 }
 
-export default Navbar
+export default Navbar;

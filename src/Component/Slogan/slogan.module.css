@@ -1,0 +1,7 @@
+.sloganMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+
+}
