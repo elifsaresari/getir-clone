@@ -1,25 +1,30 @@
-.sloganBox{
-    @apply flex box-border flex-col justify-center text-center items-center ;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding:60px 16px 40px;
-    width: 28%;
-
+.card {
+    @apply
+    rounded-lg
+    flex
+    box-border
+    flex-col
+    justify-center
+    text-center
+    items-center
+    px-4
+    pt-16
+    pb-10
+    w-card
+    bg-white
 }
 
-.sloganHeader{
-    color: #5d3ebc;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 24px;
+.cardHeader {
+    @apply
+    text-anaTema-1
+    text-lg
+    font-semibold
+    mt-6
 }
 
-.sloganText{
-    font-size: 15px;
-    color: #697488;
-    margin-top: 8px;
+.cardText {
+    @apply
+    text-base
+    text-ozel-1
+    mt-0.5
 }

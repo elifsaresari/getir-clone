@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./card.module.css"
 
+
 export interface CardProps {
     image: string
     header: string
@@ -12,10 +13,10 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
     const {image,header,text,className}=props
 
     return(
-        <div className={styles.sloganBox} >
+        <div className={styles.card} >
             <img src={image} />
-            <span className={styles.sloganHeader}>{header}</span>
-            <span className={styles.sloganText}>{text}</span>
+            <span className={styles.cardHeader}>{header}</span>
+            <span className={styles.cardText}>{text}</span>
         </div>
 
     )

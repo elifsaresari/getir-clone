@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import styles from "./Footer.module.css"
 import FirstColumn from "../FooterColumn/firstColumn";
 import SecondColumn from "../FooterColumn/secondColumn";
 import ThirdColumn from "../FooterColumn/thirdColumn";
@@ -13,52 +13,53 @@ import Instagram from "../icons/instagram";
 const Footer = () => {
 
     return (
-        <div className={styles.mainFooter}>
+        <div className={styles.wrapper}>
+            <div className={styles.mainFooter}>
 
-            <div className={styles.footerFirst}>
-                <FirstColumn></FirstColumn>
-                <SecondColumn></SecondColumn>
-                <ThirdColumn></ThirdColumn>
-                <FourthColumn></FourthColumn>
-                <FifthColumn></FifthColumn>
-            </div>
-
-            <div className={styles.footerSecond}>
-                <div className={styles.copy}>
-                    <span>© 2022 Getir</span>
-                    <div className={styles.copyDot}></div>
-                    <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/18806">
-                        <span>Bilgi Toplumu Hizmetleri</span>
-                    </a>
-
+                <div className={styles.footerFirst}>
+                    <FirstColumn></FirstColumn>
+                    <SecondColumn></SecondColumn>
+                    <ThirdColumn></ThirdColumn>
+                    <FourthColumn></FourthColumn>
+                    <FifthColumn></FifthColumn>
                 </div>
 
-                <div className={styles.social}>
+                <div className={styles.footerSecond}>
+                    <div className={styles.copy}>
+                        <span className="pr-4">© 2022 Getir</span>
+                        <div className={styles.copyDot}></div>
+                        <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/18806">
+                            <span>Bilgi Toplumu Hizmetleri</span>
+                        </a>
 
-                    <button className={styles.facebookButton}>
-                        <Facebook className={styles.facebookSvg}/>
-                    </button>
+                    </div>
 
-                    <button className={styles.twitterButton}>
-                        <Twitter className={styles.twitterSvg}/>
-                    </button>
+                    <div className={styles.social}>
 
-                    <button className={styles.ınstagramButton}>
-                        <Instagram className={styles.ınstagramSvg}/>
-                    </button>
+                        <button className={styles.facebookButton}>
+                            <Facebook className="fill-ozel-1 first:hover:fill-anaTema-1 hover:fill-anaTema-1"/>
+                        </button>
 
-                    <button className={styles.languageButton}>
-                        <div className={styles.languageDiv}>
-                            <Language color="#697488" className={styles.language}/>
-                            <a>
-                                <span className={styles.languageText}>Türkçe (TR)</span></a>
-                        </div>
-                    </button>
+                        <button className={styles.twitterButton}>
+                            <Twitter className="fill-ozel-1 hover:fill-anaTema-1"/>
+                        </button>
 
+                        <button className={styles.ınstagramButton}>
+                            <Instagram className="fill-ozel-1 hover:fill-anaTema-1"/>
+                        </button>
+
+                        <button className={styles.languageButton}>
+                            <div className={styles.languageDiv}>
+                                <Language color="#697488" className={styles.language}/>
+                                <a>
+                                    <span className={styles.languageText}>Türkçe (TR)</span></a>
+                            </div>
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
-
     )
 }
 

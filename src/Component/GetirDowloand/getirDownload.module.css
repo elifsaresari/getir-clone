@@ -1,0 +1,54 @@
+.wrapper {
+    @apply
+    bg-purpleBackground
+    bg-anaTema-1
+    rounded-lg
+    flex
+    flex-row
+    justify-between
+    my-6
+
+}
+
+.getirHeader{
+    @apply
+    font-bold
+    text-white
+    text-3xl
+}
+
+.card {
+    @apply
+    ml-12
+    flex
+    flex-col
+    items-start
+    justify-center
+    max-w-sm
+
+}
+
+.text{
+    @apply
+    text-white
+    font-semibold
+    mt-3
+}
+.store {
+    @apply
+    flex
+    flex-row
+    pt-8
+
+}
+
+.phoneLanding {
+    @apply
+    w-full
+    h-full
+}
+
+.listItem{
+    @apply
+    pr-2
+}

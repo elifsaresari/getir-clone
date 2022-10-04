@@ -1,8 +1,17 @@
+
 .app {
     display: flex;
-    height: 720px;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
+
+
+}
+
+.anaMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 button {

@@ -1,13 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.slick-prev:before {
+    fill: red !important;
+}
+
+.slick-prev:before {
+    opacity: inherit;
+    content: url("/public/icon/before.svg");
+}
+
+[dir='rtl'] .slick-prev:before {
+    opacity: inherit;
+    content: url("/public/icon/after.svg");
+}
+
+.slick-next:before {
+    opacity: inherit;
+    content: url("/public/icon/after.svg");
+}
+
+[dir='rtl'] .slick-next:before {
+    opacity: inherit;
+    content: url("/public/icon/before.svg");
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    opacity: inherit;
+}
+
+.wrapper .slick-slide{
+    height: 500px !important;
 }

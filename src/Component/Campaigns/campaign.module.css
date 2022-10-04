@@ -1,0 +1,22 @@
+
+.wrapper {
+    @apply
+    mt-6
+    max-w-max
+
+}
+
+.image {
+    @apply
+    rounded
+    w-96
+    h-48
+
+}
+
+.imgWrapper {
+    @apply
+    flex
+    w-96
+}
+

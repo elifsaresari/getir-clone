@@ -14,64 +14,64 @@ const Navbar = () => {
 
     return (
         <div className={styles.wrapper}>
-        <div className={styles.navbar + " " + styles.flexRow}>
-            <div className={styles.navbarWrapper + " " + styles.flexRow}>
-                <div className={styles.navbarMenu + " " + styles.flexRow}>
-                    <NavLink to="/">
-                        <Getir
-                            className={styles.navLogo + " " + styles.getirLogo + " " + styles.navHeight}
-                            color={location.pathname.startsWith('/') ? '#FFD300' : '#DBDBFFFF'}/>
-                    </NavLink>
+            <div className={styles.navbar + " " + styles.flexRow}>
+                <div className={styles.navbarWrapper + " " + styles.flexRow}>
+                    <div className={styles.navbarMenu + " " + styles.flexRow}>
+                        <NavLink to="/">
+                            <Getir
+                                className={styles.navLogo + " " + styles.getirLogo + " " + styles.navHeight}
+                                color={location.pathname===('/') ? '#FFD300' : '#DBDBFFFF'}/>
+                        </NavLink>
 
-                    <NavLink to="/getiryemek">
-                        <GetirYemek
-                            className={styles.navLogo + " " + styles.getiryemekLogo + " " + styles.navHeight}
-                            color={location.pathname.startsWith("/getiryemek") ? '#FFD300' : '#DBDBFFFF'}
-                            baseColor={'#DBDBFFFF'}/>
-                    </NavLink>
+                        <NavLink to="/getiryemek">
+                            <GetirYemek
+                                className={styles.navLogo + " " + styles.getiryemekLogo + " " + styles.navHeight}
+                                color={location.pathname.startsWith("/getiryemek") ? '#FFD300' : '#DBDBFFFF'}
+                                baseColor={'#DBDBFFFF'}/>
+                        </NavLink>
 
-                    <NavLink to="/getirbuyuk">
-                        <GetirBuyuk
-                            className={styles.navLogo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
-                            color={location.pathname.startsWith("/getirbuyuk") ? '#FFD300' : '#DBDBFFFF'}
-                            baseColor={'#DBDBFFFF'}/>
-                    </NavLink>
+                        <NavLink to="/getirbuyuk">
+                            <GetirBuyuk
+                                className={styles.navLogo + " " + styles.getirbuyukLogo + " " + styles.navHeight}
+                                color={location.pathname.startsWith("/getirbuyuk") ? '#FFD300' : '#DBDBFFFF'}
+                                baseColor={'#DBDBFFFF'}/>
+                        </NavLink>
 
-                    <NavLink to="/getirsu">
-                        <GetirSu
-                            className={styles.navLogo + " " + styles.getirsuLogo + " " + styles.navHeight}
-                            color={location.pathname.startsWith("/getirsu") ? '#FFD300' : '#DBDBFFFF'}
-                            baseColor={'#DBDBFFFF'}/>
-                    </NavLink>
-                </div>
+                        <NavLink to="/getirsu">
+                            <GetirSu
+                                className={styles.navLogo + " " + styles.getirsuLogo + " " + styles.navHeight}
+                                color={location.pathname.startsWith("/getirsu") ? '#FFD300' : '#DBDBFFFF'}
+                                baseColor={'#DBDBFFFF'}/>
+                        </NavLink>
+                    </div>
 
-                <div className={styles.navbarOption + " " + styles.flexRow}>
-                    <button className={styles.language_button + " " + styles.flexRow}>
-                        <div className={styles.language_div + " " + styles.navHeight}>
-                            <Language color={"#DBDBFFFF"}
-                                      className={styles.navLogo + " " + styles.languagesLogo + " " + styles.navHeight}/>
-                        </div>
-                        <span>Türkçe(TR)</span>
+                    <div className={styles.navbarOption + " " + styles.flexRow}>
+                        <button className={styles.language_button + " " + styles.flexRow}>
+                            <div className={styles.language_div + " " + styles.navHeight}>
+                                <Language color={"#DBDBFFFF"}
+                                          className={styles.navLogo + " " + styles.languagesLogo + " " + styles.navHeight}/>
+                            </div>
+                            <span>Türkçe(TR)</span>
 
-                    </button>
+                        </button>
 
-                    <button className={styles.user_button + " " + styles.flexRow}>
-                        <div className={styles.user_div + " " + styles.navHeight}>
-                            <User color={"#DBDBFFFF"}
-                                  className={styles.navLogo + " " + styles.userLogo + " " + styles.navHeight}/>
-                        </div>
-                        <span>Giriş Yap</span>
-                    </button>
-                    <button className={styles.adduser_button + " " + styles.flexRow}>
-                        <div className={styles.adduser_div + " " + styles.navHeight}>
-                            <Adduser color={"#DBDBFFFF"}
-                                     className={styles.navLogo + " " + styles.adduserLogo + " " + styles.navHeight}/>
-                        </div>
-                        <span>Kayıt Ol</span>
-                    </button>
+                        <button className={styles.user_button + " " + styles.flexRow}>
+                            <div className={styles.user_div + " " + styles.navHeight}>
+                                <User color={"#DBDBFFFF"}
+                                      className={styles.navLogo + " " + styles.userLogo + " " + styles.navHeight}/>
+                            </div>
+                            <span>Giriş Yap</span>
+                        </button>
+                        <button className={styles.adduser_button + " " + styles.flexRow}>
+                            <div className={styles.adduser_div + " " + styles.navHeight}>
+                                <Adduser color={"#DBDBFFFF"}
+                                         className={styles.navLogo + " " + styles.adduserLogo + " " + styles.navHeight}/>
+                            </div>
+                            <span>Kayıt Ol</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     )
 }

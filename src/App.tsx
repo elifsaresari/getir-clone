@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css"
 import React from 'react';
 import Index from "./Page/Getir";
 import GetirYemek from "./Page/GetirYemek/getirYemek"
@@ -7,21 +7,25 @@ import GetirSu from "./Page/GetirSu/getirSu"
 import {Routes, Route, Link, NavLink} from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar";
 import Footer from "./Component/Footer/Footer";
-import {inspect} from "util";
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
     return (
-        <div className={'app'}>
+        <div className='app'>
             <Navbar/>
-            <Routes>
+            <div className='anaMain'>
+                <Routes>
 
-                <Route path="/" element={<Index/>}/>
-                <Route path="/getiryemek" element={<GetirYemek/>}/>
-                <Route path="/getirbuyuk" element={<GetirBuyuk/>}/>
-                <Route path="/getirsu" element={<GetirSu/>}/>
+                    <Route path="/" element={<Index/>}/>
+                    <Route path="/getiryemek" element={<GetirYemek/>}/>
+                    <Route path="/getirbuyuk" element={<GetirBuyuk/>}/>
+                    <Route path="/getirsu" element={<GetirSu/>}/>
 
-            </Routes>
+                </Routes>
+            </div>
             <Footer/>
         </div>
     );
