@@ -9,9 +9,9 @@ const FirstColumn = () => {
             <div className={styles.ColumnMain}>
                 {List.map((item, index) => {
                     return (
-
-                        <img key={item.icon} className={styles.listItem} src={item.icon}/>
-
+                        <a href={item.link} target="_blank">
+                            <img key={item.icon} className={styles.listItem} src={item.icon}/>
+                        </a>
                     )
                 })}
 

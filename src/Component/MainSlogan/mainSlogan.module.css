@@ -1,0 +1,16 @@
+.wrapper{
+   position: relative;
+    z-index: 1;
+}
+
+
+
+.wrapper h1{
+    margin-bottom: 4px;
+    margin-top: 41px;
+    line-height: 40px;
+    font-size: 36px;
+    color: #fafafa;
+    width: 350px;
+    font-weight: 600;
+}

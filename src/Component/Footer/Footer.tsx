@@ -8,6 +8,7 @@ import Facebook from "../icons/facebook";
 import Language from "../icons/language";
 import Twitter from "../icons/twitter";
 import Instagram from "../icons/instagram";
+import {useHref} from "react-router";
 
 
 const Footer = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
                     <div className={styles.copy}>
                         <span className="pr-4">© 2022 Getir</span>
                         <div className={styles.copyDot}></div>
-                        <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/18806">
+                        <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/18806" target="_blank">
                             <span>Bilgi Toplumu Hizmetleri</span>
                         </a>
 
@@ -36,17 +37,18 @@ const Footer = () => {
 
                     <div className={styles.social}>
 
-                        <button className={styles.facebookButton}>
+
+                        <a href={'https://www.facebook.com/getir'} target='_blank' className={styles.facebookButton}>
                             <Facebook className="fill-ozel-1 first:hover:fill-anaTema-1 hover:fill-anaTema-1"/>
-                        </button>
+                        </a>
 
-                        <button className={styles.twitterButton}>
+                        <a href={'https://twitter.com/getir'} target='_blank' className={styles.twitterButton}>
                             <Twitter className="fill-ozel-1 hover:fill-anaTema-1"/>
-                        </button>
+                        </a>
 
-                        <button className={styles.ınstagramButton}>
+                        <a href={'https://www.instagram.com/getir/'} target='_blank' className={styles.ınstagramButton}>
                             <Instagram className="fill-ozel-1 hover:fill-anaTema-1"/>
-                        </button>
+                        </a>
 
                         <button className={styles.languageButton}>
                             <div className={styles.languageDiv}>

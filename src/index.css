@@ -10,6 +10,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fafafa;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
 }
 
 code {
@@ -28,22 +35,22 @@ code {
     fill: red !important;
 }
 
-.slick-prev:before {
+#test1234 .slick-prev:before {
     opacity: inherit;
     content: url("/public/icon/before.svg");
 }
 
-[dir='rtl'] .slick-prev:before {
+#test1234 [dir='rtl'] .slick-prev:before {
     opacity: inherit;
     content: url("/public/icon/after.svg");
 }
 
-.slick-next:before {
+#test1234 .slick-next:before {
     opacity: inherit;
     content: url("/public/icon/after.svg");
 }
 
-[dir='rtl'] .slick-next:before {
+#test1234 [dir='rtl'] .slick-next:before {
     opacity: inherit;
     content: url("/public/icon/before.svg");
 }
@@ -51,11 +58,112 @@ code {
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
-.slick-next:focus
-{
+.slick-next:focus {
     opacity: inherit;
 }
 
-.wrapper .slick-slide{
-    height: 500px !important;
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+#test123 .slick-slide{
+    padding-right: 10px;
+}
+
+.slick-slide {
+
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+#test123 .slick-track {
+    width: max-content !important;
+    display: flex;
+    flex-direction: row;
+    left: 0 !important;
+
+}
+
+#test123 .slick-slide  {
+    width:100% !important;
+
+}
+#test123 .slick-list {
+    width:100%;
+    max-width: 1228px;
+
+}
+
+
+#testMutfak .slick-prev:before {
+    opacity: inherit;
+    content: url("/public/icon/before.svg");
+}
+
+#testMutfak [dir='rtl'] .slick-prev:before {
+    opacity: inherit;
+    content: url("/public/icon/after.svg");
+}
+
+#testMutfak .slick-next:before {
+    opacity: inherit;
+    content: url("/public/icon/after.svg");
+}
+
+#testMutfak [dir='rtl'] .slick-next:before {
+    opacity: inherit;
+    content: url("/public/icon/before.svg");
+}
+
+#getir  .icon1{
+    width: 180px;
+    height: 180px;
+}
+
+#getirBuyuk .icon1{
+    width: 315px;
+    height: 62px;
+}
+
+#getirSu .icon1{
+    width: 250px;
+    height: 77px;
+}
+
+#slider .slick-slide{
+    width: 1920px;
+    height: 560px;
+}
+
+
+.slick-next
+{
+    right: 0;
+}
+
+#slider .slick-prev:before {
+    opacity: inherit;
+    content: none;
+}
+
+#slider [dir='rtl'] .slick-prev:before {
+    opacity: inherit;
+    content: none;
+}
+
+#slider .slick-next:before {
+    opacity: inherit;
+    content: none;
+}
+
+#slider [dir='rtl'] .slick-next:before {
+    opacity: inherit;
+    content: none;
 }

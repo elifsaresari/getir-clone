@@ -1,0 +1,51 @@
+
+.wrapper {
+    @apply
+    mt-6
+    max-w-max
+    flex
+    flex-col
+    justify-evenly
+}
+
+.wrapper span {
+    @apply
+    font-semibold
+}
+
+.image {
+    @apply
+    w-36
+    h-20
+}
+
+.imageText {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    w-full
+    h-1/3
+    text-center
+    border-t-one
+    border-solid
+    border-graylight-1
+    text-xs
+    text-anaTema-1
+}
+
+
+.imgWrapper {
+    @apply
+    cursor-pointer
+    mt-4
+    bg-white
+    rounded-lg
+    flex
+    flex-col
+    items-center
+    w-36
+    h-32
+}
+

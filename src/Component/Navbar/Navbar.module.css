@@ -41,8 +41,11 @@ button span {
 }
 
 .navbarMenu {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    height: auto;
+    align-items: center;
+    height: 100%;
     background: transparent;
 }
 
@@ -73,11 +76,9 @@ button span {
 }
 
 .navLogo {
-    margin-right: 2rem;
     color: rgb(250, 250, 250);
+    align-items: center;
 }
-
-
 
 
 .languagesLogo {
@@ -108,3 +109,30 @@ button span {
 .getirsuLogo {
     width: 3.25rem;
 }
+
+.bg{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 1px;
+
+}
+
+.bg:hover{
+    color: rgb(244, 242, 253);
+    background-color: #5d3ebc;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.bgActive{
+    color: rgb(244, 242, 253);
+    background-color: #5d3ebc;
+    border-radius: 6px 6px 0px 0px;
+}
+.bgNone{
+
+}
+

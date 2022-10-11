@@ -36,9 +36,9 @@ const SimpleSlider: React.FC<SimpleSliderProps> = (props) => {
 
     };
     return (
-        <div className={styles.wrapper}>
-            <h6>Kampanyalar</h6>
-            <Slider {...settings}>
+        <div id="test123" className={styles.wrapper}>
+            <span >Kampanyalar</span>
+            <Slider className={styles.imageWrapper} {...settings}>
                 {list.map((item, index) => {
                     return (
                         <div className={styles.imgWrapper}>

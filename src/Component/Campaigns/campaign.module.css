@@ -2,15 +2,19 @@
 .wrapper {
     @apply
     mt-6
+    w-full
     max-w-max
 
 }
 
+.wrapper span{
+    font-weight: 600;
+}
+
 .image {
-    @apply
-    rounded
-    w-96
-    h-48
+   width: 400px;
+    height: 200px;
+    border-radius: 8px;
 
 }
 
@@ -18,5 +22,6 @@
     @apply
     flex
     w-96
+    mt-4
 }
 

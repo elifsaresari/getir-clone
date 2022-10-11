@@ -6,11 +6,13 @@
     flex
     flex-row
     justify-between
+    max-w-max
+        w-full
     my-6
 
 }
 
-.getirHeader{
+.getirHeader {
     @apply
     font-bold
     text-white
@@ -28,12 +30,13 @@
 
 }
 
-.text{
+.text {
     @apply
     text-white
     font-semibold
     mt-3
 }
+
 .store {
     @apply
     flex
@@ -48,7 +51,7 @@
     h-full
 }
 
-.listItem{
+.listItem {
     @apply
     pr-2
 }
