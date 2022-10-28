@@ -1,14 +1,42 @@
-.wrapper {
-    background: linear-gradient(90deg, #5d3ebc 0%, rgba(93, 62, 188, 0) 100%);
+.mainWrapper {
+
     opacity: 1;
     grid-column: 1 / -1;
     width: 100%;
     height: 560px;
-    z-index: 8;
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.imageWrapper{
+.wrapper {
+    width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2/auto;
 }
+
+.sliderWrapper{
+    background: linear-gradient(90deg, #5d3ebc 0%, rgba(93, 62, 188, 0) 100%);
+    width: 100%;
+    position: absolute;
+    background-color: #191919 ;
+
+}
+
+
+.image {
+    width: 110%;
+    height: 560px !important;
+    object-fit: cover;
+    opacity: 0.5;
+    height: auto;
+
+}
+
+.imageWrapper {
+    height: 130%;
+}
+

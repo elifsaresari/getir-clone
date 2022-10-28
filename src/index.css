@@ -55,6 +55,31 @@ code {
     content: url("/public/icon/before.svg");
 }
 
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+    content: url("/public/icon/dropdown.svg");
+    padding-bottom: 32%;
+    padding-right: 16px;
+    border: none;
+
+}
+#rfs-btn{
+    height: 52px;
+    border: 2px solid rgb(223, 222, 226);;
+}
+
+#rfs-btn span {
+    color: black !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded="true"]:after {
+    border: 0;
+    padding-top: 15%;
+    padding-right: 21px;
+    content: url("/public/icon/up.svg");
+
+}
+
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -71,7 +96,8 @@ code {
     margin-left: 0;
     margin-right: 0;
 }
-#test123 .slick-slide{
+
+#test123 .slick-slide {
     padding-right: 10px;
 }
 
@@ -91,12 +117,13 @@ code {
 
 }
 
-#test123 .slick-slide  {
-    width:100% !important;
+#test123 .slick-slide {
+    width: 100% !important;
 
 }
+
 #test123 .slick-list {
-    width:100%;
+    width: 100%;
     max-width: 1228px;
 
 }
@@ -122,29 +149,28 @@ code {
     content: url("/public/icon/before.svg");
 }
 
-#getir  .icon1{
+#getir .icon1 {
     width: 180px;
     height: 180px;
 }
 
-#getirBuyuk .icon1{
+#getirBuyuk .icon1 {
     width: 315px;
     height: 62px;
 }
 
-#getirSu .icon1{
+#getirSu .icon1 {
     width: 250px;
     height: 77px;
 }
 
-#slider .slick-slide{
+#slider .slick-slide {
     width: 1920px;
     height: 560px;
 }
 
 
-.slick-next
-{
+.slick-next {
     right: 0;
 }
 

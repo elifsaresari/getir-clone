@@ -44,8 +44,8 @@ const ContentSlider: React.FC<ContentSliderProps> = (props) => {
 
                 </Slider>
             </div>
-            <div className={styles.wrapper} >
-                <MainSlogan  header={text} icon={icon}/>
+            <div className={styles.wrapper}>
+                <MainSlogan header={text} icon={icon}/>
                 <RegisterCard/>
             </div>
         </div>

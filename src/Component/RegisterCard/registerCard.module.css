@@ -1,9 +1,9 @@
 .formBox {
-    height: 100px;
+    height: 200px;
     z-index: 10;
     background-color: white;
     width: 400px;
-    padding:20px 24px;
+    padding: 20px 24px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -11,25 +11,43 @@
     justify-content: space-between;
 }
 
-.input{
+.input {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.countryInput{
+.tel{
+    height: 52px;
+    border: 2px solid rgb(223, 222, 226);
+    border-radius: 4px;
+    position: relative;
+
+}
+
+label>input:hover{
+    border-color: #5d3ebc;
+}
+
+
+
+input::placeholder{
+    padding-left: 8px;
+
+}
+
+.countryInput {
     width: 50%;
 }
 
-.arrow{
-    content: url("/public/icon/dropdown.svg");
+.arrow {
+
 }
 
-.country{
+.country {
     border-radius: 4px;
     width: 25%;
     height: 100%;
-    border:2px solid rgb(223, 222, 226);
     font-size: 18px;
     padding-left: 14px;
     padding-right: 14px;
@@ -38,3 +56,28 @@
     justify-content: space-around;
 
 }
+
+
+button {
+
+}
+
+.text {
+    background-color: #ffd300;
+    color: #5d3ebc;
+    font-weight: 600;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.text:hover {
+    background-color: #5d3ebc;
+    color: #ffd300;
+
+}
+
+
+
+
