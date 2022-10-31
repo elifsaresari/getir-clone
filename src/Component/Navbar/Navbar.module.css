@@ -22,7 +22,6 @@ button span {
     height: 45px !important;
     padding-right: 2rem;
     padding-left: 2rem;
-
     justify-content: space-between;
     width: 100%;
     background: rgb(76, 51, 152);
@@ -135,4 +134,73 @@ button span {
 .bgNone{
 
 }
+.modal{
+    background-color: #fafafa;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
 
+}
+
+.modalİki{
+    background-color: #fafafa;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+
+}
+
+.modalNavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.modalHeader{
+    color: #5d3ebc;
+    font-size: 16px;
+}
+
+.exitBtn{
+
+    size: 10px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+
+.modalDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kvkk{
+    color: #5d3ebc;
+    text-decoration:underline #5d3ebc !important;
+}
+
+.registerDiv{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.registerSpan{
+    color: #697488;
+    font-size: 14px;
+}
+
+.kvkkSpan{
+    font-size: 12px;
+    color: #a2a2a2;
+}

@@ -55,6 +55,11 @@ code {
     content: url("/public/icon/before.svg");
 }
 
+
+ .ReactFlagsSelect-module_flagsSelect__2pfa2{
+     margin-bottom: 0;
+ }
+
 .ReactFlagsSelect-module_selectBtn__19wW7:after {
     content: url("/public/icon/dropdown.svg");
     padding-bottom: 32%;
@@ -64,8 +69,12 @@ code {
 }
 #rfs-btn{
     height: 52px;
+    width: 110px;
+    margin-left: 22px;
     border: 2px solid rgb(223, 222, 226);;
 }
+
+
 
 #rfs-btn span {
     color: black !important;
@@ -192,4 +201,8 @@ code {
 #slider [dir='rtl'] .slick-next:before {
     opacity: inherit;
     content: none;
+}
+
+.slick-list{
+    position: initial;
 }

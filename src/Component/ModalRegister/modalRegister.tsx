@@ -1,10 +1,10 @@
-import styles from "../RegisterCard/registerCard.module.css"
+import styles from "../ModalRegister/modalRegister.module.css"
 import {useState} from "react";
 import ReactFlagsSelect from "react-flags-select";
 import {text} from "stream/consumers";
 import {Form} from "react-router-dom";
 
-const RegisterCard = () => {
+const ModalRegister = () => {
 
     const [selected, setSelected] = useState('TR');
 
@@ -21,7 +21,7 @@ const RegisterCard = () => {
     return (
 
         <div className={styles.formBox}>
-            <h6 className={styles.header}> Giriş Yap veya Kayıt Ol</h6>
+
             <form>
                 <div className={styles.input}>
                     <div className={styles.country}>
@@ -51,4 +51,4 @@ const RegisterCard = () => {
 }
 
 
-export default RegisterCard
+export default ModalRegister

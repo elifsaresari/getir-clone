@@ -6,6 +6,7 @@ import list from "../Lists/yemekList"
 import {it} from "node:test";
 import MainSlogan from "../MainSlogan/mainSlogan";
 import RegisterCard from "../RegisterCard/registerCard";
+import autoprefixer from "autoprefixer";
 
 
 export interface getirVideoProps {
@@ -20,7 +21,7 @@ const GetirVideo: React.FC<getirVideoProps> = (props) => {
     const settings = {
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed:2000 ,
 
     };
     return (
