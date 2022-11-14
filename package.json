@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@material-ui/core": "^4.12.4",
+    "@mui/styled-engine-sc": "^5.10.6",
+    "material-ui-backdrop-component": "^1.0.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -15,11 +21,15 @@
     "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.6",
     "react-spring": "^9.5.5",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@mui/material": "^5.10.13",
     "@types/node": "^16.11.57",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",

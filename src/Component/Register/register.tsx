@@ -22,6 +22,10 @@ const RegisterNew = () => {
 
         <div className={styles.formBox}>
 
+            <div className={styles.header}>
+                <span>Kayıt
+             Ol</span>
+            </div>
             <form>
                 <div className={styles.input}>
                     <div className={styles.telefon}>
@@ -67,23 +71,25 @@ const RegisterNew = () => {
 
                     </div>
 
-                    <div>
-                        <input className={styles.checkBox} type="checkbox"/>
-                        <div className={styles.check}></div>
+                    <div className={styles.checkboxWrapper}>
+                        <div>
+                            <input className={styles.checkBox} type="checkbox"/></div>
+
                         <span className={styles.checkbox}>Getir’in bana özel kampanya, tanıtım ve fırsatlarından haberdar olmak istiyorum.</span>
                     </div>
                     <div>
                         <span className={styles.metin} data-testid="text"
                         >Kişisel verilerinize dair Aydınlatma Metni için <a className={styles.aMetni}
-                            href="https://agreements.getir.com/privacy_notice_100_TR_tr_1.html"
-                            target="_blank">tıklayınız</a>.
+                                                                            href="https://agreements.getir.com/privacy_notice_100_TR_tr_1.html"
+                                                                            target="_blank">tıklayınız</a>.
 
-Üye olmakla, <a className={styles.aMetni} href="https://agreements.getir.com/tcs2282022_200_TR_tr_4.html" target="_blank">Kullanım Koşulları</a> hükümlerini kabul etmektesiniz.</span>
+Üye olmakla, <a className={styles.aMetni} href="https://agreements.getir.com/tcs2282022_200_TR_tr_4.html"
+                target="_blank">Kullanım Koşulları</a> hükümlerini kabul etmektesiniz.</span>
                     </div>
 
 
                 </div>
-
+                <button className={styles.text}>Kayıt Ol</button>
             </form>
         </div>
     )

@@ -151,6 +151,7 @@ code {
 #testMutfak .slick-next:before {
     opacity: inherit;
     content: url("/public/icon/after.svg");
+    padding-left: 30px;
 }
 
 #testMutfak [dir='rtl'] .slick-next:before {
@@ -206,3 +207,13 @@ code {
 .slick-list{
     position: initial;
 }
+
+.ReactModal__Overlay {
+    z-index: 100;
+}
+
+.ReactModal__Overlay--after-open{
+    z-index: 100;
+}
+
+

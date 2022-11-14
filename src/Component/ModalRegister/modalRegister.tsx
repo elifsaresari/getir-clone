@@ -31,6 +31,7 @@ const ModalRegister = () => {
                             selected={selected}
                             onSelect={code => setSelected(code)}
                         />
+
                         <input className={styles.countryInput} type="tel" placeholder={"90"}/>
                         <div className={styles.arrow}></div>
                     </div>
